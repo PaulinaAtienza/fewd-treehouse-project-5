@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
