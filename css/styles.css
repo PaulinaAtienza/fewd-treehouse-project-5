@@ -4,9 +4,13 @@
 }
 
 .gallery {
-    max-width: 900px;
+    max-width: 875px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    grid-gap: 25px;
+}
+
+img {
+    max-width: 100%;
 }
