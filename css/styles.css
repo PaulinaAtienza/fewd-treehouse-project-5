@@ -3,6 +3,21 @@
     margin: auto;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+input {
+    max-width: 500px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #bebebe;
+    outline: 0;
+}
+
 .gallery {
     max-width: 875px;
     display: grid;
