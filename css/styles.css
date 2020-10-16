@@ -1,6 +1,10 @@
+/* ===== Universal Styles ===== */
+
 * {
     box-sizing: border-box;
 }
+
+/* ===== Element Styles ===== */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -20,6 +24,8 @@ input {
 img {
     max-width: 100%;
 }
+
+/* ===== Class Styles ===== */
 
 .gallery {
     max-width: 875px;
