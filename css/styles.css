@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: auto;
 }
 
 body {
@@ -13,19 +12,21 @@ input {
     border-radius: 5px;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border: 2px solid #bebebe;
     outline: 0;
 }
 
-.gallery {
-    max-width: 875px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
-    grid-gap: 25px;
-}
-
 img {
     max-width: 100%;
+}
+
+.gallery {
+    max-width: 875px;
+    margin: auto;
+    justify-content: center;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
 }
