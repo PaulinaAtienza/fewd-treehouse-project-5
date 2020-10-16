@@ -1,13 +1,13 @@
 const searchBar = document.getElementById("search");
-let gallery = document.querySelectorAll(".gallery a");
-searchBar.addEventListener("keyup", (e) => {
+let photoGallery = document.querySelectorAll(".gallery a");
+searchBar.addEventListener("keyup", function(e) {
   const searchTerm = e.target.value.toLowerCase();
-  for (let i = 0; i < gallery.length; i++) {
-    const searchInput = gallery[i].getAttribute("data-caption");
+  for (let i = 0; i < photoGallery.length; i++) {
+    const searchInput = photoGallery[i].getAttribute("data-caption");
   if (searchInput.toLowerCase().includes(searchTerm)) {
-    gallery[i].style.display = "";
+    photoGallery[i].style.display = "";
   } else {
-    gallery[i].style.display = "none";
+    photoGallery[i].style.display = "none";
   }
 }
 });
